@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+*  {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#cabecalho {
+  background-image: url(/assets/images/header.jpg);
+  padding: 2.5em;
+  text-align: center;
+  border-bottom: 10px solid aqua;
+}
+
+.cabecalho__titulo {
+  align-items: flex-start;
+  font-size: 48px;
+}
+
+#galeria {
+  text-align: center;
+  background-color: rgba(47, 79, 79, 0.534);
+}
+
+.galeria__titulo {
+  padding: .5em;
+  background-color: rgba(47, 79, 79, 0.534);
+}
+
+.galeria__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.galeria__conteudo {
+  padding: 1.5em;
+  align-items: center;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.galeria__imagem:hover {
+  transform: scale(1.15);
+  transition: .3s ease-in;
+}
+
+.galeria__imagem {
+  justify-content: flex-start;
+  border-radius: 25%;
+  margin: 20px 0;
+}
+
+.galeria__conteudo--descricao {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .galeria__container {
+    flex-direction: column;
+  }
+
+  .galeria__conteudo {
+    width: 40%;
+  }
+}
